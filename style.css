@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@700&family=Rubik:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(game_bg.jpg);
+    background-size: cover;
+}
+.game-instructions{
+    border: 2px solid #e0e0e0;
+    color: white;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    margin-top: 25vh;
+    box-shadow: 10px 10px 10px #000;
+    background-image: url(instruction-bg.jpg);
+    background-size: cover;
+}
+.game-instructions h1, h3, h4{
+    font-family: 'Poppins',sans-serif;
+}
+.game-instructions p{
+    font-family: 'Rubik',sans-serif;
+}
+.game-instructions h3{
+    margin: 20px 0;
+}
+.game-instructions p{
+    margin: 15px 0;
+}
+.game-instructions .start-button{
+    padding: 5px;
+    width: 100px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    margin-top: 50px;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+.game-instructions .start-button:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    transform: scale(1.3);
+    border: none;
+}
+.scoretag{
+    position: absolute;
+    right: 25vw;
+    top: 50px;
+    font-size: 3rem;
+    color: white;
+}
+#game-canvas{
+    margin-top: 30px;
+    background-color: white;
+}
+.gameOver{
+    position: absolute;
+    text-align: center;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+#highScore{
+    position: absolute;
+    color: red;
+    text-align: center;
+    top: 53vh;
+}
+
+@media screen and (max-width:1000px){
+    #game-canvas{
+        width: 300px;
+        height: 550px;
+    }
+    .scoretag{
+        font-size: 1.5rem;
+        right: 14vw;
+    }
+    #highScore{
+        top: 45vh;
+    }
+    .game-instructions{
+        height: 60vh;
+    }
+    .game-instructions .start-button{
+        margin-top: 30px;
+    }      
+}
+@media screen and (max-width:1500px){
+    .scoretag{
+        font-size: 2.5rem;
+        right: 15vw;
+    }
+}

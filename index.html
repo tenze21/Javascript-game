@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Project</title>
+   <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="game-instructions">
+        <h1>Letter Dash</h1>
+        <h3>Instructions:</h3>
+        <p>Click the alphabets before they reach the bottom of the screen. There will be a score board which keeps track of the number of letters
+            you sucessfully click. The speed of the letters will increase as you progress through the game. If you lose click anywhere on the screen
+            to continue playing. Your score will be recorded. Letter Dash was created with the aim of improving the typing speed of people in an 
+            interactive and fun manner.</p>
+        <h4>Don't let your letters fall!!!😊😊😊</h4>
+        <button class="start-button">Start</button>
+    </div>
+    <p style="display: none;" class="scoretag">Score: <span id="score">0</span></p>
+    <canvas id="game-canvas" width="400" height="650" style="border: 4px solid red; display: none;"></canvas>
+    <div class="gameOver" style="display: none;">
+        <h1 id="gameOverDisplay">Game Over</h1>
+        <h3 id="currentScoreTag">score: <span id="currentScore">0</span></h3>
+    </div>
+    <h4 style="display: none;" id="highScore">New High Score✌️!!!</h4>
+    <script src="script.js"></script>
+</body>
+</html>
